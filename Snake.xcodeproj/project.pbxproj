@@ -14,6 +14,8 @@
 		CE5F59601D6A903E00B9046B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5F595E1D6A903E00B9046B /* LaunchScreen.storyboard */; };
 		CE5F596B1D6A903F00B9046B /* SnakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F596A1D6A903F00B9046B /* SnakeTests.swift */; };
 		CE5F59761D6A903F00B9046B /* SnakeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F59751D6A903F00B9046B /* SnakeUITests.swift */; };
+		CE5F59841D6AC73700B9046B /* Snake.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F59831D6AC73700B9046B /* Snake.swift */; };
+		CE5F59861D6ADD0800B9046B /* SquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F59851D6ADD0700B9046B /* SquareView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		CE5F59711D6A903F00B9046B /* SnakeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnakeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5F59751D6A903F00B9046B /* SnakeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeUITests.swift; sourceTree = "<group>"; };
 		CE5F59771D6A903F00B9046B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE5F59831D6AC73700B9046B /* Snake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snake.swift; sourceTree = "<group>"; };
+		CE5F59851D6ADD0700B9046B /* SquareView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				CE5F595C1D6A903E00B9046B /* Assets.xcassets */,
 				CE5F595E1D6A903E00B9046B /* LaunchScreen.storyboard */,
 				CE5F59611D6A903E00B9046B /* Info.plist */,
+				CE5F59831D6AC73700B9046B /* Snake.swift */,
+				CE5F59851D6ADD0700B9046B /* SquareView.swift */,
 			);
 			path = Snake;
 			sourceTree = "<group>";
@@ -261,6 +267,8 @@
 			files = (
 				CE5F59581D6A903E00B9046B /* ViewController.swift in Sources */,
 				CE5F59561D6A903E00B9046B /* AppDelegate.swift in Sources */,
+				CE5F59841D6AC73700B9046B /* Snake.swift in Sources */,
+				CE5F59861D6ADD0800B9046B /* SquareView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +360,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -392,7 +400,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -405,6 +413,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Snake/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.black.Snake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,6 +425,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Snake/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.black.Snake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -487,6 +497,7 @@
 				CE5F597C1D6A903F00B9046B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE5F597D1D6A903F00B9046B /* Build configuration list for PBXNativeTarget "SnakeTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +506,7 @@
 				CE5F597F1D6A903F00B9046B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE5F59801D6A903F00B9046B /* Build configuration list for PBXNativeTarget "SnakeUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +515,7 @@
 				CE5F59821D6A903F00B9046B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
