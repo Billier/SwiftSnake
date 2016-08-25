@@ -113,8 +113,6 @@ class Snake {
         backScreen.center = view.center
         
         reset()
-        
-        moving()
     }
     
     func reset() {
@@ -218,7 +216,10 @@ class Snake {
                     self.backScreen.addSubview(self.targetSquareView)
                     
                 }
-                self.moving()
+                
+                if self.gameState == .Playing {
+                    self.moving()
+                }
             }
         }
     }
@@ -258,6 +259,7 @@ class Snake {
             reset()
         default:
             gameState = .Playing
+            moving()
         }
         
     }
